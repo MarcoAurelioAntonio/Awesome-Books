@@ -9,3 +9,6 @@ const bookArr = [
   }
 ];
 
+bookArr.forEach((item), ()=> {
+
+})
