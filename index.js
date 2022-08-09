@@ -32,8 +32,14 @@ for (let i = 0; i < bookArr.length; i += 1) {
   authorArr[i].innerHTML = bookArr[i].author; 
 
   buttonArr[i] = document.createElement('button');
+  buttonArr[i].classList.add('remove-button');
   buttonArr[i].innerHTML = 'Remove';
   bookElement[i].appendChild(buttonArr[i]);
+  console.log(buttonArr);
+
+  buttonArr[i].addEventListener('click', () => {
+    bookElement[i].remove();
+  });
 
 }
 
@@ -45,7 +51,6 @@ addSelector.addEventListener('click', () => {
   listSelector.textContent = '';
   
   bookArr.push(newBook);
-  console.log(bookArr);
   for (let i = 0; i < bookArr.length; i += 1) {
 
     bookElement[i] = document.createElement('div');
@@ -61,19 +66,24 @@ addSelector.addEventListener('click', () => {
     authorArr[i].innerHTML = bookArr[i].author; 
 
     buttonArr[i] = document.createElement('button');
+    buttonArr[i].classList.add('remove-button');
     buttonArr[i].innerHTML = 'Remove';
     bookElement[i].appendChild(buttonArr[i]);
+
+    buttonArr[i].addEventListener('click', () => {
+      bookElement[i].remove();
+    });
   }
   titleSelector.value = '';
   authorSelector.value = '';
-  console.log(newBook.title);
-  console.log(titleSelector);
-  console.log(newBook.author);
-  console.log(authorSelector);
-  console.log(newBook);
 
 });
 
+
+
+/*buttonArr[].addEventListener('click', () => {
+  console.log('it works');
+});*/
 
 /*function showBook(book) {
   const title = document.createElement('h2');
