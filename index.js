@@ -4,12 +4,22 @@ const authorSelector = document.querySelector('.author');
 const addSelector = document.querySelector('.btn');
 const listSelector = document.querySelector('.list');
 
+const bookInfo = {
+  title: '',
+  author: '',
+};
+
+localCheck();
+
+
 let bookArr = [
   {
     title: 'Dialogues',
     author: 'Plato',
   }
 ];
+
+getInfo();
 
 const titleArr = [];
 const authorArr = [];
@@ -35,13 +45,13 @@ for (let i = 0; i < bookArr.length; i += 1) {
   buttonArr[i].classList.add('remove-button');
   buttonArr[i].innerHTML = 'Remove';
   bookElement[i].appendChild(buttonArr[i]);
-  console.log(buttonArr);
 
 }
 
 addSelector.addEventListener('click', () => {
     let newBook = {};
 
+  storeInfo();
   newBook.title = titleSelector.value;
   newBook.author = authorSelector.value;
   listSelector.textContent = '';
@@ -71,7 +81,6 @@ addSelector.addEventListener('click', () => {
       bookArr.splice(i, 1);
 
       listSelector.textContent = '';
-      console.log(bookArr);
       for (let i = 0; i < bookArr.length; i += 1) {
 
         bookElement[i] = document.createElement('div');
@@ -98,4 +107,21 @@ addSelector.addEventListener('click', () => {
 
 });
 
+function storeInfo() {
+  bookInfo.title = titleSelector.value;
+  bookInfo.author = authorSelector.value;
+  localStorage.setItem('book', JSON.stringify(bookInfo));
+}
 
+function getInfo() {
+  const obtainedInfo = JSON.parse(localStorage.getItem('book'));
+  if (bookInfo.title !== '') {
+  bookArr.push(obtainedInfo);
+  }
+}
+
+function localCheck() {
+  if (localStorage.getItem('book') === null) {
+    localStorage.setItem('book', JSON.stringify(bookInfo));
+  }
+}
