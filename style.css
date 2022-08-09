@@ -17,3 +17,11 @@ form {
   width: 500px;
   margin: auto;
 }
+
+.header {
+  order: 1;
+}
+
+.list {
+  order: 2;
+}
