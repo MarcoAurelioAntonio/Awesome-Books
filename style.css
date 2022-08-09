@@ -11,6 +11,14 @@ body {
   margin-top: 100px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -24,4 +32,8 @@ form {
 
 .list {
   order: 2;
+}
+
+.form {
+  order: 3;
 }
