@@ -25,7 +25,7 @@ for (let i = 0; i < bookArr.length; i += 1) {
 
   bookElement[i] = document.createElement('div');
   listSelector.appendChild(bookElement[i]);
-
+  bookElement[i].classList.add('bookbox');
   titleArr[i] = document.createElement('h2');
   authorArr[i] = document.createElement('p');
 
@@ -54,7 +54,7 @@ addSelector.addEventListener('click', () => {
 
     bookElement[i] = document.createElement('div');
     listSelector.appendChild(bookElement[i]);
-
+    bookElement[i].classList.add('bookbox');
     titleArr[i] = document.createElement('h2');
     authorArr[i] = document.createElement('p');
 

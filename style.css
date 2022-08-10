@@ -37,3 +37,24 @@ form {
 .form {
   order: 3;
 }
+
+.btn {
+  width: 60px;
+  margin: 10px auto;
+}
+
+.title,
+.author {
+  width: 250px;
+  margin: 10px auto;
+  padding: 2px;
+}
+
+.bookbox {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+.remove-button {
+  margin: 10px;
+}
