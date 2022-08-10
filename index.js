@@ -76,7 +76,7 @@ addSelector.addEventListener('click', () => {
     buttonArr[i].innerHTML = 'Remove';
     bookElement[i].appendChild(buttonArr[i]);
 
-    buttonArr[i].addEventListener('click', () => {
+    buttonArr[i].addEventListener('click', (e) => {
 
       bookArr.splice(i, 1);
 
@@ -101,6 +101,8 @@ addSelector.addEventListener('click', () => {
         bookElement[i].appendChild(buttonArr[i]);
       };
     });
+
+
   };
   titleSelector.value = '';
   authorSelector.value = '';
