@@ -20,7 +20,6 @@ const authorArr = [];
 const buttonArr = [];
 const bookElement = [];
 
-
 for (let i = 0; i < bookArr.length; i += 1) {
 
   bookElement[i] = document.createElement('div');
@@ -87,9 +86,7 @@ x.addEventListener('click', (e) => {
     }
   });
 
-
   // ......................................................... //
-
 
 function storeInfo() {
   bookInfo.title = titleSelector.value;
