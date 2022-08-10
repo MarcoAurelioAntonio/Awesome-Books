@@ -57,7 +57,6 @@ addSelector.addEventListener('click', () => {
   listSelector.textContent = '';
   
   bookArr.push(newBook);
-  display(newBook);
   localStorage.setItem('book', JSON.stringify(bookArr));
   console.log(JSON.parse(localStorage.getItem('book')));
   console.log(bookArr);
@@ -141,3 +140,9 @@ function display(displayBook) {
 
 /*bookArry[i].title = savedData[I].title*/
 /*for (let I = 0; I< savedData.length; I++)*/
+
+const savedData = JSON.parse(localStorage.getItem('book'));
+for (let i = 0; i < savedData.length; i+=1) {
+  bookArr[i].title = savedData[i].title
+  bookArr[i].author = savedData[i].author
+}
