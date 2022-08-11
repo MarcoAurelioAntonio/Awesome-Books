@@ -19,7 +19,7 @@ addSelector.addEventListener('click', ()=> {
 		/*console.log(titleSelector.value);
 		console.log(authorSelector.value);*/
 	
-		//New object
+		//New object with the parameters extracted from the inputs
 		const myBook = new Book(titleSelector.value, authorSelector.value);
 	
 		//create Title
