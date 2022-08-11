@@ -5,9 +5,9 @@
 > This is our Awesome Books microverse project!
 
 Created by:
--Inaki Eskauriatza
--Gustavo Porcilio
--Benjamin Ejike
+- Inaki Eskauriatza
+- Gustavo Porcilio
+- Benjamin Ejike
 
 ## Built With
 
