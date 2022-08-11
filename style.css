@@ -9,6 +9,7 @@ body {
   margin: auto;
   text-align: center;
   margin-top: 100px;
+  width: 100%;
 }
 
 .container {
@@ -36,12 +37,12 @@ form {
 }
 
 .form {
-  order: 3;
+  order: 4;
 }
 
 .btn {
   width: 60px;
-  margin: 10px auto;
+  margin-left: 319px;
   padding: 5px;
   box-shadow: 5px 5px 5px 2px;
   border: 2px solid black;
@@ -69,6 +70,16 @@ form {
 .remove-button {
   margin: 10px;
   padding: 5px;
-  box-shadow: 5px 5px 5px 2px;
+  box-shadow: 5px 5px 7px 1px;
   border: 2px solid black;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.hr {
+  order: 3;
+  height: 2px;
+  width: 75px;
+  background-color: black;
+  margin: 20px auto;
 }
