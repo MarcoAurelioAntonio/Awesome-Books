@@ -32,6 +32,7 @@ form {
 
 .list {
   order: 2;
+  border: 1px solid black;
 }
 
 .form {
@@ -51,8 +52,10 @@ form {
 }
 
 .bookbox {
-  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
   margin-top: 10px;
+  align-items: center;
 }
 
 .remove-button {

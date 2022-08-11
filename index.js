@@ -64,22 +64,33 @@ class ArrayTemplate {
         this.books.push(newBook);
         localStorage.setItem('book', JSON.stringify(this.books));
         for (let i = 0; i < this.books.length; i += 1) {
-          this.bookElement[i] = document.createElement('div');
+          this.bookElement[i] = document.createElement('tr');
           this.listSelector.appendChild(this.bookElement[i]);
           this.bookElement[i].classList.add('bookbox');
-          this.titleArr[i] = document.createElement('h2');
-          this.authorArr[i] = document.createElement('p');
+          this.bookElement[i].innerHTML = ` 
+          <div class="book-txt">
+           "${this.books[i].title}" by ${this.books[i].author}
+          </div>
+
+           <button class="remove-button">Remove</button>
+
+          `
+
+
+
+          // this.titleArr[i] = document.createElement('h2');
+          // this.authorArr[i] = document.createElement('p');
     
-          this.bookElement[i].appendChild(this.titleArr[i]);
-          this.bookElement[i].appendChild(this.authorArr[i]);
+          // this.bookElement[i].appendChild(this.titleArr[i]);
+          // this.bookElement[i].appendChild(this.authorArr[i]);
     
-          this.titleArr[i].innerHTML = this.books[i].title;
-          this.authorArr[i].innerHTML = this.books[i].author;
+          // this.titleArr[i].innerHTML = this.books[i].title;
+          // this.authorArr[i].innerHTML = this.books[i].author;
     
-          this.buttonArr[i] = document.createElement('button');
-          this.buttonArr[i].classList.add('remove-button');
-          this.buttonArr[i].innerHTML = 'Remove';
-          this.bookElement[i].appendChild(this.buttonArr[i]);
+          // this.buttonArr[i] = document.createElement('button');
+          // this.buttonArr[i].classList.add('remove-button');
+          // this.buttonArr[i].innerHTML = 'Remove';
+          // this.bookElement[i].appendChild(this.buttonArr[i]);
         }
       }
     });
