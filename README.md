@@ -13,7 +13,7 @@ Created by:
 
 - HTML
 - CSS
--Javascript
+- Javascript
 
 ## Getting Started
 
@@ -41,8 +41,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@gustavoporcilio](https://twitter.com/gustavoporcilio)
 - LinkedIn: [Gustavo Porcilio](https://www.linkedin.com/in/gustavo-porcilio-4496a223a/)
 
-## Author
-
 👤 **Benjamin Ejike**
 
 - GitHub: [@githubhandle](https://github.com/osbentech)
@@ -60,7 +58,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thank you Microverse, Youtube, Wikipedia, W3Schools, Codegrepper and my Microverse friends that gave me advice.
+- Thank you Microverse, Youtube, Wikipedia, W3Schools, Codegrepper and my Microverse friends that gave us advice.
 
 ## 📝 License
 
