@@ -12,6 +12,7 @@ class ArrayTemplate {
     this.bookElement = [];
     this.books = [];
     this.bookInfo = {};
+    this.by = [];
   }
   getInfo() {
     const obtainedInfo = JSON.parse(localStorage.getItem('book'));
@@ -24,18 +25,24 @@ class ArrayTemplate {
       this.bookElement[i] = document.createElement('div');
       this.listSelector.appendChild(this.bookElement[i]);
       this.bookElement[i].classList.add('bookbox');
+
+
       this.titleArr[i] = document.createElement('h2');
       this.authorArr[i] = document.createElement('p');
-    
+      this.by[i] = document.createElement('span');
+      this.by[i].classList.add('span');
+
       this.bookElement[i].appendChild(this.titleArr[i]);
+      this.bookElement[i].appendChild(this.by[i]);
       this.bookElement[i].appendChild(this.authorArr[i]);
-    
-      this.titleArr[i].innerHTML = `"${this.books[i].title}"`;
-      this.authorArr[i].innerHTML = `by ${this.books[i].author}`;
-    
+        
+      this.titleArr[i].textContent = `"${this.books[i].title}"`;
+      this.by[i].textContent = 'by';
+      this.authorArr[i].textContent = `${this.books[i].author}`;
+        
       this.buttonArr[i] = document.createElement('button');
       this.buttonArr[i].classList.add('remove-button');
-      this.buttonArr[i].innerHTML = 'Remove🗑';
+      this.buttonArr[i].textContent = 'Remove 🗑';
       this.bookElement[i].appendChild(this.buttonArr[i]);
     }
 
@@ -61,18 +68,24 @@ class ArrayTemplate {
           this.bookElement[i] = document.createElement('div');
           this.listSelector.appendChild(this.bookElement[i]);
           this.bookElement[i].classList.add('bookbox');
+
+
           this.titleArr[i] = document.createElement('h2');
           this.authorArr[i] = document.createElement('p');
-        
+          this.by[i] = document.createElement('span');
+          this.by[i].classList.add('span');
+
           this.bookElement[i].appendChild(this.titleArr[i]);
+          this.bookElement[i].appendChild(this.by[i]);
           this.bookElement[i].appendChild(this.authorArr[i]);
         
           this.titleArr[i].textContent = `"${this.books[i].title}"`;
-          this.authorArr[i].textContent = `by ${this.books[i].author}`;
+          this.by[i].textContent = 'by';
+          this.authorArr[i].textContent = `${this.books[i].author}`;
         
           this.buttonArr[i] = document.createElement('button');
           this.buttonArr[i].classList.add('remove-button');
-          this.buttonArr[i].textContent = 'Remove🗑';
+          this.buttonArr[i].textContent = 'Remove 🗑';
           this.bookElement[i].appendChild(this.buttonArr[i]);
         }
       }
@@ -86,7 +99,7 @@ class ArrayTemplate {
   removeFunction() {
   const x = document.getElementsByClassName('list')[0];
   x.addEventListener('click', (e) => {
-  if (e.target.textContent === 'Remove🗑') {
+  if (e.target.textContent === 'Remove 🗑') {
     this.removeItem(e.target.parentElement.firstChild);
     e.target.parentElement.remove();
       }

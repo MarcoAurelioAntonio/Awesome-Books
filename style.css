@@ -10,6 +10,7 @@ body {
   text-align: center;
   margin-top: 100px;
   width: 100%;
+  font-style: italic;
 }
 
 .container {
@@ -29,6 +30,7 @@ form {
 
 .header {
   order: 1;
+  margin-bottom: 10px;
 }
 
 .list {
