@@ -1,4 +1,60 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+}
+
+.header {
+  order: 1;
+}
+
+.list {
+  order: 2;
+}
+
+.form {
+  order: 3;
+}
+
+.btn {
+  width: 60px;
+  margin: 10px auto;
+}
+
+.title,
+.author {
+  width: 250px;
+  margin: 10px auto;
+  padding: 2px;
+}
+
+.bookbox {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+.remove-button {
+  margin: 10px;
 }
