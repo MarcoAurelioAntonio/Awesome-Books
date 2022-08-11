@@ -32,7 +32,7 @@ form {
 
 .list {
   order: 2;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .form {
@@ -42,6 +42,9 @@ form {
 .btn {
   width: 60px;
   margin: 10px auto;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 2px;
+  border: 2px solid black;
 }
 
 .title,
@@ -49,15 +52,23 @@ form {
   width: 250px;
   margin: 10px auto;
   padding: 2px;
+  border: 2px solid black;
 }
 
 .bookbox {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
   align-items: center;
+  padding-left: 10px;
+}
+
+.bookbox:nth-child(odd) {
+  background-color: #d3d3d3;
 }
 
 .remove-button {
   margin: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 2px;
+  border: 2px solid black;
 }
