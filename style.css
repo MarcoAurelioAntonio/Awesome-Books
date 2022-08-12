@@ -31,15 +31,30 @@ form {
 .header {
   order: 1;
   margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.disable {
+  pointer-events: none;
+  background-color: #d3d3d3;
 }
 
 .list {
   order: 2;
   border: 2px solid black;
+  width: 500px;
 }
 
 .form {
   order: 4;
+}
+
+.form-title {
+  font-size: 32px;
 }
 
 .btn {
@@ -78,10 +93,78 @@ form {
   font-size: 15px;
 }
 
-.hr {
-  order: 3;
-  height: 2px;
-  width: 75px;
-  background-color: black;
+.footer {
+  order: 5;
+  border: 2px solid black;
+  margin-top: 30px;
+  padding: 3px 0;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  text-align: start;
+  margin-left: 10px;
+}
+
+/* --------------------------Navbar starts here----------- */
+
+.time {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  align-items: center;
+  padding: 3px 5px;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.pole {
+  margin: 0 2px;
+}
+
+/* ------------------------Contact Info starts here------------------ */
+
+.contact-info {
   margin: 20px auto;
+  width: 500px;
+}
+
+.contact-header {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.contact-text1,
+.contact-text2 {
+  text-align: start;
+  margin-left: 20px;
+}
+
+.contact-text2 {
+  margin-bottom: 15px;
+}
+
+.contact-ul {
+  text-align: start;
+}
+
+.contact-list {
+  margin-left: 60px;
 }
