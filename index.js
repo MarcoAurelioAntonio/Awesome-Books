@@ -181,6 +181,3 @@ bookArr.forLoop();
 bookArr.storeInfo();
 bookArr.removeFunction();
 bookArr.navbar();
-bookArr.disableList();
-bookArr.disableAdd();
-bookArr.disableContact();
