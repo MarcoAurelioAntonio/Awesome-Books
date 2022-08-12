@@ -9,6 +9,8 @@ body {
   margin: auto;
   text-align: center;
   margin-top: 100px;
+  width: 100%;
+  font-style: italic;
 }
 
 .container {
@@ -28,19 +30,24 @@ form {
 
 .header {
   order: 1;
+  margin-bottom: 10px;
 }
 
 .list {
   order: 2;
+  border: 2px solid black;
 }
 
 .form {
-  order: 3;
+  order: 4;
 }
 
 .btn {
   width: 60px;
-  margin: 10px auto;
+  margin-left: 319px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 2px;
+  border: 2px solid black;
 }
 
 .title,
@@ -48,13 +55,33 @@ form {
   width: 250px;
   margin: 10px auto;
   padding: 2px;
+  border: 2px solid black;
 }
 
 .bookbox {
-  border-bottom: 1px solid black;
-  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.bookbox:nth-child(odd) {
+  background-color: #d3d3d3;
 }
 
 .remove-button {
   margin: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 7px 1px;
+  border: 2px solid black;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.hr {
+  order: 3;
+  height: 2px;
+  width: 75px;
+  background-color: black;
+  margin: 20px auto;
 }
