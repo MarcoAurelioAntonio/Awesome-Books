@@ -107,11 +107,10 @@ form {
 
 /* --------------------------Navbar starts here----------- */
 
-
-
 .time {
   display: flex;
   justify-content: flex-end;
+  font-size: 12px;
 }
 
 .navbar {
@@ -143,7 +142,7 @@ form {
 
 .contact-info {
   margin: 20px auto;
-  max-width: 400px;
+  width: 500px;
 }
 
 .contact-header {
@@ -154,7 +153,7 @@ form {
 .contact-text1,
 .contact-text2 {
   text-align: start;
-  margin-left: -30px;
+  margin-left: 20px;
 }
 
 .contact-text2 {
@@ -163,4 +162,8 @@ form {
 
 .contact-ul {
   text-align: start;
+}
+
+.contact-list {
+  margin-left: 60px;
 }
