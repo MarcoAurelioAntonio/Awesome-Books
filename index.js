@@ -111,6 +111,7 @@ class ArrayTemplate {
       localStorage.setItem('book', JSON.stringify(this.bookInfo));
     }
   }
+
   navbar() {
     this.navList.addEventListener('click', () => {
       this.listSelector.classList.toggle('hidden');
